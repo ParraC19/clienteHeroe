@@ -17,7 +17,11 @@
     <section class="container my-4">
       <secction class="row">
         <section class="col-12 col-md-6 align-self-center">
-          <img src="./assets/img/link.png" alt="" class="img-fluid img-link-form" />
+          <img
+            src="./assets/img/link.png"
+            alt=""
+            class="img-fluid img-link-form"
+          />
         </section>
         <section class="col-12 col-md-6 align-self-center">
           <h3>Registra un personaje</h3>
@@ -29,34 +33,62 @@
             architecto libero. Sapiente labore modi ducimus ipsum?
           </p>
           <form class="border rounded shadow p-5">
-            <input type="text" class="mb-3 form-control" placeholder="id" />
-            <input type="text" class="mb-3 form-control" placeholder="Nombre" />
+            <input
+              type="text"
+              class="mb-3 form-control"
+              placeholder="Nombre"
+              id="nombre"
+            />
             <input
               type="number"
               class="mb-3 form-control"
               placeholder="Cantidad de Vida"
+              id="cantidadVida"
             />
             <input
               type="number"
               class="mb-3 form-control"
               placeholder="Poder de ataque"
+              id="ataque"
             />
             <input
               type="number"
               class="mb-3 form-control"
               placeholder="Poder de defensa"
+              id="defensa"
             />
+            <input
+              type="text"
+              placeholder="Categoria"
+              id="categoria"
+              class="mb-3 form-control"
+            />
+            <div class="form-check form-switch my-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="sigueVivo"
+              />
+              <label class="form-check-label" for="sigueVivoCheck"
+                >Sigue Vivo?
+              </label>
+            </div>
             <input
               type="text"
               class="mb-3 form-control"
               placeholder="URL fotografia"
+              id="fotografia"
             />
             <input
               type="date"
               class="mb-3 form-control"
               placeholder="Fecha de creacion"
+              id="fechaCreacion"
             />
-            <button class="btn btn-outline-dark">Registrar</button>
+            <button class="btn btn-outline-dark" id="botonFormulario">
+              Registrar
+            </button>
           </form>
         </section>
       </secction>
@@ -66,5 +98,7 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/assets/js/controlador.js" type="module"></script>
   </body>
 </html>
